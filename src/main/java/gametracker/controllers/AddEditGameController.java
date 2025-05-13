@@ -1,4 +1,4 @@
-package main.java.Controllers;
+package main.java.controllers;
 package com.example.gametracker.controllers;
 
 import javafx.fxml.FXML;

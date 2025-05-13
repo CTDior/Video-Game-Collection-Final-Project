@@ -1,4 +1,4 @@
-package main.java;
+package gametracker;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
