@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<ScrollPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gametracker.controllers.AddEditGameController">
+    <VBox spacing="10" style="-fx-padding:15;" prefWidth="400">
+        <Label text="Add / Edit Game" style="-fx-font-size:18px;"/>
+        <TextField fx:id="titleField" promptText="Title"/>
+        <TextField fx:id="platformField" promptText="Platform"/>
+        <TextField fx:id="genreField" promptText="Genre"/>
+        <CheckBox fx:id="completeInBoxCheckbox" text="Complete in Box"/>
+        <DatePicker fx:id="dateAcquiredPicker" promptText="Date Acquired"/>
+        <TextField fx:id="pricePaidField" promptText="Price Paid"/>
+        <TextField fx:id="pricechartingField" promptText="Pricecharting.com Price"/>
+        <TextField fx:id="esrbField" promptText="ESRB Rating"/>
+        <TextField fx:id="metacriticField" promptText="Metacritic Score"/>
+        <TextArea fx:id="notesArea" promptText="Notes" prefRowCount="4"/>
+        <Button fx:id="saveButton" text="Save" onAction="#onSave"/>
+    </VBox>
+</ScrollPane>

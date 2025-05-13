@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gametracker.controllers.GameDetailsController">
+    <top>
+        <HBox spacing="10" style="-fx-padding:10;" alignment="CENTER_LEFT">
+            <Button text="←" onAction="#onBack"/>
+            <Label text="Game Details" style="-fx-font-size:18px;"/>
+        </HBox>
+    </top>
+    <center>
+        <HBox spacing="20" style="-fx-padding:15;">
+            <ImageView fx:id="coverImageView" fitWidth="150" fitHeight="200"/>
+            <VBox spacing="8">
+                <Label fx:id="titleLabel" text="Title"/>
+                <Label fx:id="platformLabel" text="Platform"/>
+                <Label fx:id="genreLabel" text="Genre"/>
+                <CheckBox fx:id="completeInBoxCheckbox" text="Complete in Box"/>
+                <HBox spacing="10">
+                    <Label text="Price Paid:"/>
+                    <Label fx:id="pricePaidLabel"/>
+                </HBox>
+                <HBox spacing="10">
+                    <Label text="Pricecharting Price:"/>
+                    <Label fx:id="pricechartingLabel"/>
+                </HBox>
+                <HBox spacing="10">
+                    <Label text="ESRB Rating:"/>
+                    <Label fx:id="esrbLabel"/>
+                </HBox>
+                <HBox spacing="10">
+                    <Label text="Metacritic Score:"/>
+                    <Label fx:id="metacriticLabel"/>
+                </HBox>
+                <TextArea fx:id="notesArea" promptText="Notes" prefRowCount="3"/>
+                <Button fx:id="editButton" text="Edit" onAction="#onEdit"/>
+            </VBox>
+        </HBox>
+    </center>
+</BorderPane>
